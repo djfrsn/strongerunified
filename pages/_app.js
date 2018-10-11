@@ -1,6 +1,5 @@
 import App, { Container } from 'next/app';
 import React from 'react';
-import { MenuProvider } from '../components/bathkebespoke/context/MenuContext';
 import '../components/index.scss';
 
 class MyApp extends App {
@@ -8,9 +7,7 @@ class MyApp extends App {
     const { Component, pageProps } = this.props;
     return (
       <Container>
-        <MenuProvider>
-          <Component {...pageProps} />
-        </MenuProvider>
+        <Component {...pageProps} />
       </Container>
     );
   }
