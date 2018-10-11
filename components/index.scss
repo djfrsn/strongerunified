@@ -1,0 +1,62 @@
+@tailwind preflight;
+@tailwind components;
+
+@tailwind utilities;
+@import '../node_modules/include-media/dist/_include-media.scss';
+
+@mixin iphoneXLandscape() {
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    @content;
+  }
+}
+
+// https://include-media.com/
+// Media Query Setup
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$sm: '>=sm';
+$md: '>=md';
+$lg: '>=lg';
+$xl: '>=xl';
+
+// https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat:400,700
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+// Helper Variables
+$box-shadow-color: rgba(0, 0, 0, 0.16);
+
+// Colors
+$bb-color-0: #ffffff;
+$bb-color-1: #f3c8a2;
+$bb-color-2: #f6e5d3;
+$bb-color-3: #880a0a;
+$bb-color-4: #c6c6c6;
+$bb-color-5: #e8d0b8;
+
+// animations - https://easings.net/
+$animation-in-out-quint: cubic-bezier(0.77, 0, 0.175, 1);
+$animation-in-out-circ: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+$animation-bouncy: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+// Flair
+$standard-box-shadow: 0 0 6px $box-shadow-color;
+
+// Margins
+$outer-margin-main: 1.25em;
+
+@import './helpers.scss';
+
+// Components
+@import '../components/strongerunified/styles/index.scss';
+// @import '../components/bathkebespoke/styles/partials/header.scss';
+// @import '../components/bathkebespoke/styles/partials/footer.scss';
+// @import '../components/bathkebespoke/styles/partials/menu.scss';
+
+body {
+  @apply font-sans;
+}
