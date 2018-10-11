@@ -31,6 +31,19 @@ export function getContentTypeData({ content, keys }) {
     : { data: {} };
 }
 
+export function keyContent(content) {
+  const keys = Object.keys(content);
+
+  return keys
+    ? keys.reduce((content_keys, content_key) => {
+        return {
+          ...content_keys,
+          [content_key]: content[content_key]
+        };
+      }, {})
+    : {};
+}
+
 export function getContent(type, content, keys) {
   return getContentTypeData({
     content: content[type] && content[type].data,
@@ -47,8 +60,8 @@ export const setLinkTarget = st => (st.target ? st.target : '_self');
 
 export const text = t => t[0].text;
 export const url = l => {
-  const link_fragment = l.url.split('bb.');
-  const link_hash = l.url.includes('//bb') ? getLinkHash(link_fragment) : l.url;
+  const link_fragment = l.url.split('su.');
+  const link_hash = l.url.includes('//su') ? getLinkHash(link_fragment) : l.url;
   const isIndex = Boolean(!link_hash);
 
   return isIndex ? '/' : link_hash;

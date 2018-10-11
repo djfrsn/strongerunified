@@ -1,8 +1,21 @@
 import React from 'react';
 import Link from 'next/link';
+import { keyContent, text, url, setLinkTarget } from '../../helpers/prismic';
 
 class Header extends React.Component {
   render() {
+    const {
+      mailto_email,
+      phone_number,
+      donate_url,
+      donate_label,
+      logo_url,
+      nav,
+      social_icon_label,
+      social_icons
+    } = keyContent(this.props.content);
+    console.log(nav);
+
     return (
       <header className="site-header header-style1">
         <div className="topbar">
@@ -12,34 +25,43 @@ class Header extends React.Component {
                 <ul>
                   <li>
                     <i className="fi flaticon-envelope-of-white-paper" />
-                    mail@charityworld.com
+                    {text(mailto_email)}
                   </li>
                   <li>
-                    <i className="fi flaticon-cellphone" /> +123 (456) 789 012
+                    <i className="fi flaticon-cellphone" />
+                    {text(phone_number)}
                   </li>
                 </ul>
               </div>
               <div className="col col-lg-4 col-md-5 col-sm-6">
                 <div className="social-follow-donate">
                   <div className="social-follow">
-                    <span>Follow us</span>
+                    <span>{text(social_icon_label)}</span>
                     <ul className="social-links">
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-twitter" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fa fa-facebook" />
-                        </a>
-                      </li>
+                      {social_icons.map((icon, key) => {
+                        return (
+                          <li key={key}>
+                            <Link href={url(icon.social_icon_url)}>
+                              <a target={setLinkTarget(icon.social_icon_url)}>
+                                <i
+                                  className={`fa ${text(
+                                    icon.social_icon_name
+                                  )}`}
+                                />
+                              </a>
+                            </Link>
+                          </li>
+                        );
+                      })}
                     </ul>
                   </div>
                   <div className="donate">
-                    <a href="#">
-                      <i className="fi flaticon-money-4" /> Donate
-                    </a>
+                    <Link href={url(donate_url)} prefetch={true}>
+                      <a>
+                        <i className="fi flaticon-money-4" />
+                        {text(donate_label)}
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -55,9 +77,9 @@ class Header extends React.Component {
                 <span className="icon-bar" />
                 <span className="icon-bar" />
               </button>
-              <Link href="/">
+              <Link href="/" prefetch={true}>
                 <a className="navbar-brand">
-                  <img src="/static/logo.png" />
+                  <img src={url(logo_url)} />
                 </a>
               </Link>
             </div>

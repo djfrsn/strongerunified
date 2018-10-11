@@ -1,5 +1,7 @@
 import React from 'react';
 import scriptLoader from 'react-async-script-loader';
+import { ContentConsumer } from '../../helpers/ContentContext';
+import { keyContent } from '../../helpers/prismic';
 
 import Header from './Header';
 import Hero from './Hero';
@@ -17,28 +19,35 @@ import Footer from './Footer';
 class PageWrapper extends React.Component {
   render() {
     return (
-      <div className="page-wrapper">
-        <div className="preloader">
-          <div>
-            <span />
-            <span />
-            <span />
-            <span />
-          </div>
-        </div>
-        <Header />
-        <Hero />
-        <Volunteers />
-        <Causes />
-        <FunFact />
-        <UrgentCauses />
-        <AboutUs />
-        <VolunteersList />
-        <QuickDonation />
-        <Testimonials />
-        <CTA />
-        <Footer />
-      </div>
+      <ContentConsumer>
+        {content => {
+          const { header } = keyContent(content.content);
+          return (
+            <div className="page-wrapper">
+              <div className="preloader">
+                <div>
+                  <span />
+                  <span />
+                  <span />
+                  <span />
+                </div>
+              </div>
+              <Header content={header.data} />
+              <Hero />
+              <Volunteers />
+              <Causes />
+              <FunFact />
+              <UrgentCauses />
+              <AboutUs />
+              <VolunteersList />
+              <QuickDonation />
+              <Testimonials />
+              <CTA />
+              <Footer />
+            </div>
+          );
+        }}
+      </ContentConsumer>
     );
   }
 }
