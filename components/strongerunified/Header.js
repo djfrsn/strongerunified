@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 class Header extends React.Component {
   render() {
@@ -54,9 +55,11 @@ class Header extends React.Component {
                 <span className="icon-bar" />
                 <span className="icon-bar" />
               </button>
-              <a className="navbar-brand" href="index.html">
-                <img src="/static/logo.png" />
-              </a>
+              <Link href="/">
+                <a className="navbar-brand">
+                  <img src="/static/logo.png" />
+                </a>
+              </Link>
             </div>
             <div
               id="navbar"
@@ -66,51 +69,24 @@ class Header extends React.Component {
                 <i className="fa fa-close" />
               </button>
               <ul className="nav navbar-nav">
-                <li className="sub-menu">
-                  <a href="#">Home</a>
-                  <ul>
-                    <li className="current">
-                      <a href="index.html">Home style 1</a>
-                    </li>
-                    <li>
-                      <a href="index-2.html">Home style 2</a>
-                    </li>
-                    <li>
-                      <a href="index-3.html">Home style 3</a>
-                    </li>
-                  </ul>
-                </li>
                 <li>
-                  <a href="about.html">About</a>
+                  <Link href="/about">
+                    <a>About</a>
+                  </Link>
                 </li>
                 <li className="sub-menu">
                   <a href="#">Causes</a>
                   <ul>
                     <li>
-                      <a href="causes.html">Causes style 1</a>
+                      <a href="cause-single.html">Causes 1</a>
                     </li>
                     <li>
-                      <a href="causes-s2.html">Causes style 2</a>
+                      <a href="cause-single.html">Causes 2</a>
                     </li>
                     <li>
-                      <a href="causes-list.html">Causes list</a>
-                    </li>
-                    <li>
-                      <a href="cause-single.html">Cause single</a>
-                    </li>
-                    <li className="sub-sub-menu">
-                      <a href="#">Third level</a>
-                      <ul>
-                        <li>
-                          <a href="#">Third level</a>
-                        </li>
-                        <li>
-                          <a href="#">Third level</a>
-                        </li>
-                        <li>
-                          <a href="#">Third level</a>
-                        </li>
-                      </ul>
+                      <Link href="/about">
+                        <a href="causes-list.html">Current Causes</a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -118,111 +94,31 @@ class Header extends React.Component {
                   <a href="#">Events</a>
                   <ul>
                     <li>
-                      <a href="events.html">Events style 1</a>
+                      <Link href="/currentevents">
+                        <a>Current Events</a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="event-single.html">Event single</a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="sub-menu">
-                  <a href="#">Shop</a>
-                  <ul>
-                    <li>
-                      <a href="shop.html">Shop</a>
-                    </li>
-                    <li>
-                      <a href="shop-left-sidebar.html">Shop left sidebar</a>
-                    </li>
-                    <li>
-                      <a href="shop-right-sidebar.html">Shop right sidebar</a>
-                    </li>
-                    <li>
-                      <a href="shop-details.html">Shop details</a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="sub-menu">
-                  <a href="#">Blog</a>
-                  <ul>
-                    <li>
-                      <a href="blog.html">Blog</a>
-                    </li>
-                    <li>
-                      <a href="blog-details.html">Blog details</a>
+                      <a href="event-single.html">Event 1</a>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="contact.html">Contact</a>
+                  <a href="#">Blog</a>
+                  <ul>
+                    <li>
+                      <Link href="/blog">
+                        <a>Blog</a>
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <Link href="/contact">
+                    <a>Contact</a>
+                  </Link>
                 </li>
               </ul>
-            </div>
-            <div className="search-mini-cart">
-              <div className="search header-search-area hidden">
-                <a href="#" className="open-btn">
-                  <i className="fi flaticon-magnifying-glass" />
-                </a>
-                <div className="header-search-form">
-                  <form className="form">
-                    <div>
-                      <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Search here"
-                      />
-                    </div>
-                    <button type="submit" className="btn">
-                      <i className="fi flaticon-magnifying-glass" />
-                    </button>
-                  </form>
-                </div>
-              </div>
-              <div className="mini-cart-wrapper">
-                <div className="mini-cart-btn">
-                  <a href="#">
-                    <i className="fi flaticon-paper-bag" />
-                    <span className="item-count">21</span>
-                  </a>
-                </div>
-                <ul className="mini-cart hidden">
-                  <li className="item">
-                    <div className="product-img">
-                      <img src="/static/shop/thumb/img-1.jpg" />
-                    </div>
-                    <div className="product-details">
-                      <h6>Name of the product</h6>
-                      <p>$255.5</p>
-                      <a href="#">
-                        <i className="fa fa-trash-o" />
-                      </a>
-                    </div>
-                  </li>
-                  <li className="item">
-                    <div className="product-img">
-                      <img src="/static/shop/thumb/img-2.jpg" />
-                    </div>
-                    <div className="product-details">
-                      <h6>Name of the product</h6>
-                      <p>$155.5</p>
-                      <a href="#">
-                        <i className="fa fa-trash-o" />
-                      </a>
-                    </div>
-                  </li>
-                  <li className="minicart-price-total">
-                    <div className="price-total">
-                      <span className="label-price-total">Subtotal</span>
-                      <div className="price-total-w">
-                        <span>$255.5</span>
-                      </div>
-                    </div>
-                    <div className="checkout-btn">
-                      <a className="btn theme-btn">Proceed to checkout</a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </nav>
