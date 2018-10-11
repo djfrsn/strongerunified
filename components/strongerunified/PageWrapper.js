@@ -1,4 +1,6 @@
 import React from 'react';
+import scriptLoader from 'react-async-script-loader';
+
 import Header from './Header';
 import Hero from './Hero';
 import Volunteers from './Volunteers';
@@ -41,4 +43,9 @@ class PageWrapper extends React.Component {
   }
 }
 
-export default PageWrapper;
+export default scriptLoader(
+  '/static/js/jquery.min.js',
+  '/static/js/bootstrap.min.js',
+  '/static/js/bootstrap.min.js',
+  '/static/js/script.js'
+)(PageWrapper);

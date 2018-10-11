@@ -3,6 +3,7 @@ import Head from 'next/head';
 export default ({ title = 'Stronger Unified' }) => (
   <Head>
     <title>{title}</title>
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="Stronger Unified" />
     <link href="/static/css/font-awesome.min.css" rel="stylesheet" />
     <link href="/static/css/flaticon.css" rel="stylesheet" />
@@ -40,9 +41,7 @@ export default ({ title = 'Stronger Unified' }) => (
     <meta name="theme-color" content="#f3c8a2" />
     <script src="static/js/jquery.min.js" />
     <script src="static/js/bootstrap.min.js" />
-
     <script src="static/js/jquery-plugin-collection.js" />
-
     <script src="static/js/script.js" />
   </Head>
 );
