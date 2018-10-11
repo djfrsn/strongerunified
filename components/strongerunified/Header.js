@@ -14,7 +14,6 @@ class Header extends React.Component {
       social_icon_label,
       social_icons
     } = keyContent(this.props.content);
-    console.log(nav);
 
     return (
       <header className="site-header header-style1">
@@ -91,55 +90,35 @@ class Header extends React.Component {
                 <i className="fa fa-close" />
               </button>
               <ul className="nav navbar-nav">
-                <li>
-                  <Link href="/about">
-                    <a>About</a>
-                  </Link>
-                </li>
-                <li className="sub-menu">
-                  <a href="#">Causes</a>
-                  <ul>
-                    <li>
-                      <a href="cause-single.html">Causes 1</a>
-                    </li>
-                    <li>
-                      <a href="cause-single.html">Causes 2</a>
-                    </li>
-                    <li>
-                      <Link href="/about">
-                        <a href="causes-list.html">Current Causes</a>
+                {nav.map((nav_item, key) => {
+                  const sub_menu =
+                    nav_item.items.length > 0 ? nav_item.items : undefined;
+                  return (
+                    <li key={key} className={sub_menu ? 'sub-menu' : ''}>
+                      <Link href={url(nav_item.primary.link)} prefetch={true}>
+                        <a>{text(nav_item.primary.label)}</a>
                       </Link>
+                      {sub_menu && (
+                        <ul>
+                          {sub_menu.map(
+                            ({ sub_nav_link, sub_nav_link_label }, key) => {
+                              return (
+                                <li key={key}>
+                                  <Link
+                                    href={url(sub_nav_link)}
+                                    prefetch={true}
+                                  >
+                                    <a>{text(sub_nav_link_label)}</a>
+                                  </Link>
+                                </li>
+                              );
+                            }
+                          )}
+                        </ul>
+                      )}
                     </li>
-                  </ul>
-                </li>
-                <li className="sub-menu">
-                  <a href="#">Events</a>
-                  <ul>
-                    <li>
-                      <Link href="/currentevents">
-                        <a>Current Events</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <a href="event-single.html">Event 1</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Blog</a>
-                  <ul>
-                    <li>
-                      <Link href="/blog">
-                        <a>Blog</a>
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <Link href="/contact">
-                    <a>Contact</a>
-                  </Link>
-                </li>
+                  );
+                })}
               </ul>
             </div>
           </div>
