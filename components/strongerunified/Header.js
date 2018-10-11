@@ -4,14 +4,13 @@ class Header extends React.Component {
   render() {
     return (
       <header className="site-header header-style1">
-        {}
         <div className="topbar">
           <div className="container">
             <div className="row">
               <div className="col col-lg-8 col-md-7 col-sm-6 info">
                 <ul>
                   <li>
-                    <i className="fi flaticon-envelope-of-white-paper" />{' '}
+                    <i className="fi flaticon-envelope-of-white-paper" />
                     mail@charityworld.com
                   </li>
                   <li>
@@ -43,13 +42,9 @@ class Header extends React.Component {
                   </div>
                 </div>
               </div>
-            </div>{' '}
-            {}
-          </div>{' '}
-          {}
+            </div>
+          </div>
         </div>
-        {}
-        {}
         <nav className="navigation navbar navbar-default">
           <div className="container">
             <div className="navbar-header">
@@ -163,9 +158,8 @@ class Header extends React.Component {
                 </li>
               </ul>
             </div>
-            {}
             <div className="search-mini-cart">
-              <div className="search header-search-area">
+              <div className="search header-search-area hidden">
                 <a href="#" className="open-btn">
                   <i className="fi flaticon-magnifying-glass" />
                 </a>
@@ -191,7 +185,7 @@ class Header extends React.Component {
                     <span className="item-count">21</span>
                   </a>
                 </div>
-                <ul className="mini-cart">
+                <ul className="mini-cart hidden">
                   <li className="item">
                     <div className="product-img">
                       <img src="/static/shop/thumb/img-1.jpg" />
@@ -231,9 +225,7 @@ class Header extends React.Component {
               </div>
             </div>
           </div>
-          {}
-        </nav>{' '}
-        {}
+        </nav>
       </header>
     );
   }
