@@ -19,7 +19,7 @@ const Index = props => (
 
 Index.getInitialProps = async () => {
   const response = await getContentTypeAPI({
-    content_type: ['header', 'footer', 'menu']
+    content_type: ['header', 'footer']
   });
 
   return getContentType(response);

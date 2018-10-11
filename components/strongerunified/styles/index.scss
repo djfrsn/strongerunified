@@ -6,7 +6,6 @@ Author:         themexriver
 URL:            http://themeforest.net/user/themexriver
 -------------------------------------------------------------------*/
 
-
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -48,57 +47,52 @@ URL:            http://themeforest.net/user/themexriver
 ----------------------------------------------------------------*/
 
 // helpers
-@import "helpers/variables";
-@import "helpers/mixins";
-@import "helpers/functions";
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/functions';
 
 // base
-@import "base/base";
-
+@import 'base/base';
 
 // components
-@import "components/section-title";
-@import "components/buttons";
-@import "components/form";
-@import "components/sticky-header";
-@import "components/social-links";
-@import "components/page-title";
-@import "components/preloader";
-@import "components/carousel-dots-width-nav";
-@import "components/volunteers-grid";
-@import "components/testimonials-grids";
-@import "components/featured-causes-grids";
-@import "components/causes-s2-grids";
-@import "components/recent-blog-grids";
-@import "components/products-grids";
-@import "components/causes-s3-grids";
-@import "components/charity-categories-section-grids";
-@import "components/partners";
-@import "components/pagination";
-@import "components/sidebar";
-@import "components/shop-sidebar";
+@import 'components/section-title';
+@import 'components/buttons';
+@import 'components/form';
+@import 'components/sticky-header';
+@import 'components/social-links';
+@import 'components/page-title';
+@import 'components/preloader';
+@import 'components/carousel-dots-width-nav';
+@import 'components/volunteers-grid';
+@import 'components/testimonials-grids';
+@import 'components/featured-causes-grids';
+@import 'components/causes-s2-grids';
+@import 'components/recent-blog-grids';
+@import 'components/products-grids';
+@import 'components/causes-s3-grids';
+@import 'components/charity-categories-section-grids';
+@import 'components/partners';
+@import 'components/pagination';
+@import 'components/sidebar';
+@import 'components/shop-sidebar';
 
 // layout
-@import "layout/header";
-@import "layout/hero-slider";
-@import "layout/footer";
+@import 'layout/header';
+@import 'layout/hero-slider';
+@import 'layout/footer';
 
 // page
-@import "page/home-default";
-@import "page/home-s2";
-@import "page/home-s3";
-@import "page/about";
-@import "page/causes";
-@import "page/causes-s2";
-@import "page/causes-list";
-@import "page/cause-single";
-@import "page/contact";
-@import "page/events";
-@import "page/event-single";
-@import "page/blog";
-@import "page/blog-details";
-@import "page/shop";
-@import "page/shop-left-sidebar";
-@import "page/shop-details";
-
-
+@import 'page/home-default';
+@import 'page/about';
+@import 'page/causes';
+@import 'page/causes-s2';
+@import 'page/causes-list';
+@import 'page/cause-single';
+@import 'page/contact';
+@import 'page/events';
+@import 'page/event-single';
+@import 'page/blog';
+@import 'page/blog-details';
+@import 'page/shop';
+@import 'page/shop-left-sidebar';
+@import 'page/shop-details';
