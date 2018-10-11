@@ -39,9 +39,5 @@ export default ({ title = 'Stronger Unified' }) => (
     <meta name="msapplication-TileColor" content="#f3c8a2" />
     <meta name="msapplication-config" content="/static/browserconfig.xml" />
     <meta name="theme-color" content="#f3c8a2" />
-    <script src="static/js/jquery.min.js" />
-    <script src="static/js/bootstrap.min.js" />
-    <script src="static/js/jquery-plugin-collection.js" />
-    <script src="static/js/script.js" />
   </Head>
 );
