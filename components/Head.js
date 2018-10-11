@@ -4,6 +4,14 @@ export default ({ title = 'Stronger Unified' }) => (
   <Head>
     <title>{title}</title>
     <meta name="description" content="Stronger Unified" />
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/static/css/flaticon.css" rel="stylesheet" />
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/static/css/animate.css" rel="stylesheet" />
+    <link href="/static/css/owl.carousel.css" rel="stylesheet" />
+    <link href="/static/css/owl.theme.css" rel="stylesheet" />
+    <link href="/static/css/owl.transitions.css" rel="stylesheet" />
+    <link href="/static/css/jquery.fancybox.css" rel="stylesheet" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
