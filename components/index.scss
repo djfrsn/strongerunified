@@ -1,7 +1,3 @@
-@tailwind preflight;
-@tailwind components;
-
-@tailwind utilities;
 @import '../node_modules/include-media/dist/_include-media.scss';
 
 @mixin iphoneXLandscape() {
@@ -24,10 +20,6 @@ $md: '>=md';
 $lg: '>=lg';
 $xl: '>=xl';
 
-// https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat:400,700
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-
-// Helper Variables
 $box-shadow-color: rgba(0, 0, 0, 0.16);
 
 // Colors
@@ -53,7 +45,3 @@ $outer-margin-main: 1.25em;
 
 // Components
 @import '../components/strongerunified/styles/index.scss';
-
-body {
-  @apply font-sans;
-}
