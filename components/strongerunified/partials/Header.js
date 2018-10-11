@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { keyContent, text, url, setLinkTarget } from '../../helpers/prismic';
+import { keyContent, text, url, setLinkTarget } from '../../../helpers/prismic';
 
 class Header extends React.Component {
   render() {

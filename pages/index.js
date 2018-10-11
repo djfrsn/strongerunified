@@ -3,7 +3,7 @@ import { getContentTypeAPI } from '../api/prismic';
 import { ContentProvider } from '../helpers/ContentContext';
 import { getContentType } from '../helpers/prismic';
 
-import PageWrapper from '../components/strongerunified/PageWrapper';
+import PageWrapper from '../components/strongerunified/Home';
 import '../components/index.scss';
 
 const Index = props => (

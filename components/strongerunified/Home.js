@@ -3,20 +3,20 @@ import scriptLoader from 'react-async-script-loader';
 import { ContentConsumer } from '../../helpers/ContentContext';
 import { keyContent } from '../../helpers/prismic';
 
-import Header from './Header';
-import Hero from './Hero';
-import Volunteers from './Volunteers';
-import Causes from './Causes';
-import FunFact from './FunFact';
-import UrgentCauses from './UrgentCauses';
-import AboutUs from './AboutUs';
-import VolunteersList from './VolunteersList';
-import QuickDonation from './QuickDonation';
-import Testimonials from './Testimonials';
-import CTA from './CTA';
-import Footer from './Footer';
+import Header from './partials/Header';
+import Hero from './partials/main/Hero';
+import Volunteers from './partials/main/Volunteers';
+import Causes from './partials/main/Causes';
+import FunFact from './partials/main/FunFact';
+import UrgentCauses from './partials/main/UrgentCauses';
+import AboutUs from './partials/main/AboutUs';
+import VolunteersList from './partials/main/VolunteersList';
+import QuickDonation from './partials/main/QuickDonation';
+import Testimonials from './partials/main/Testimonials';
+import CTA from './partials/main/CTA';
+import Footer from './partials/Footer';
 
-class PageWrapper extends React.Component {
+class Home extends React.Component {
   render() {
     return (
       <ContentConsumer>
@@ -59,4 +59,4 @@ export default scriptLoader(
     '/static/js/bootstrap.min.js'
   ],
   '/static/js/script.js'
-)(PageWrapper);
+)(Home);
