@@ -6,7 +6,7 @@ class Partners extends React.Component {
       <section className="partners section-padding">
         <div className="container">
           <div className="row section-title">
-            <h2>Our Proud Partners</h2>
+            <h2>{this.props.title}</h2>
           </div>
           <div className="row">
             <div className="col col-xs-12">
