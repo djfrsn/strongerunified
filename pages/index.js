@@ -21,6 +21,7 @@ Index.getInitialProps = async () => {
   const response = await getContentTypeAPI({
     content_type: ['header', 'footer']
   });
+  console.log('hasinitial', getContentType(response));
 
   return getContentType(response);
 };

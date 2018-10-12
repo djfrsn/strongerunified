@@ -1,6 +1,7 @@
 import React from 'react';
 import { ContentConsumer } from '../../helpers/ContentContext';
 import { keyContent } from '../../helpers/prismic';
+import { Preloader } from './Home';
 
 import vendorScripts from '../../pages/_vendorScripts';
 import Header from './partials/Header';
@@ -18,17 +19,9 @@ class About extends React.Component {
       <ContentConsumer>
         {content => {
           const { header } = keyContent(content.content);
-          console.log('c', content);
           return (
             <div className="page-wrapper">
-              <div className="preloader">
-                <div>
-                  <span />
-                  <span />
-                  <span />
-                  <span />
-                </div>
-              </div>
+              <Preloader content={content} />
               {content.content_ready && (
                 <React.Fragment>
                   <Header content={header.data} />
