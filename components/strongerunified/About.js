@@ -4,24 +4,21 @@ import { keyContent } from '../../helpers/prismic';
 
 import vendorScripts from '../../pages/_vendorScripts';
 import Header from './partials/Header';
-import Hero from './partials/main/Hero';
-import Volunteers from './partials/main/Volunteers';
-import Causes from './partials/main/Causes';
-import FunFact from './partials/main/FunFact';
-import UrgentCauses from './partials/main/UrgentCauses';
-import AboutUs from './partials/main/AboutUs';
+import PageTitleWrapper from './partials/about/PageTitleWrapper';
+import AboutCompany from './partials/about/AboutCompany';
+import Partners from './partials/about/Partners';
 import VolunteersList from './partials/main/VolunteersList';
-import QuickDonation from './partials/main/QuickDonation';
-import Testimonials from './partials/main/Testimonials';
+import FunFact from './partials/main/FunFact';
 import CTA from './partials/main/CTA';
 import Footer from './partials/Footer';
 
-class Home extends React.Component {
+class About extends React.Component {
   render() {
     return (
       <ContentConsumer>
         {content => {
           const { header } = keyContent(content.content);
+          console.log('c', content);
           return (
             <div className="page-wrapper">
               <div className="preloader">
@@ -35,16 +32,12 @@ class Home extends React.Component {
               {content.content_ready && (
                 <React.Fragment>
                   <Header content={header.data} />
-                  <Hero />
-                  <Volunteers />
-                  <Causes />
+                  <PageTitleWrapper />
+                  <AboutCompany />
                   <FunFact />
-                  <UrgentCauses />
-                  <AboutUs />
                   <VolunteersList />
-                  <QuickDonation />
-                  <Testimonials />
                   <CTA />
+                  <Partners />
                   <Footer />
                 </React.Fragment>
               )}
@@ -56,4 +49,4 @@ class Home extends React.Component {
   }
 }
 
-export default vendorScripts(Home);
+export default vendorScripts(About);
