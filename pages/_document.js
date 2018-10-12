@@ -19,6 +19,12 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script src="/static/js/jquery.min.js" />
+          <script src="/static/js/bootstrap.min.js" />
+
+          <script src="/static/js/jquery-plugin-collection.js" />
+
+          <script src="/static/js/script.js" />
         </body>
       </html>
     );
