@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class EventsList extends React.Component {
   render() {
@@ -35,7 +35,7 @@ class EventsList extends React.Component {
                   </a>
                 </div>
                 <div className="event-pic">
-                  <img src="images/events/img-1.jpg" alt />
+                  <img src="/static/events/img-1.jpg" />
                 </div>
               </div>
               <div className="event-row">
@@ -66,7 +66,7 @@ class EventsList extends React.Component {
                   </a>
                 </div>
                 <div className="event-pic">
-                  <img src="images/events/img-2.jpg" alt />
+                  <img src="/static/events/img-2.jpg" />
                 </div>
               </div>
               <div className="event-row">
@@ -97,7 +97,7 @@ class EventsList extends React.Component {
                   </a>
                 </div>
                 <div className="event-pic">
-                  <img src="images/events/img-3.jpg" alt />
+                  <img src="/static/events/img-3.jpg" />
                 </div>
               </div>
               <div className="event-row">
@@ -128,7 +128,7 @@ class EventsList extends React.Component {
                   </a>
                 </div>
                 <div className="event-pic">
-                  <img src="images/events/img-4.jpg" alt />
+                  <img src="/static/events/img-4.jpg" />
                 </div>
               </div>
               <div className="load-more">
@@ -136,7 +136,7 @@ class EventsList extends React.Component {
                   <i className="fa fa-spinner" /> Load more
                 </a>
               </div>
-            </div>{" "}
+            </div>{' '}
             {}
             <div className="col col-md-3 sidebar-wrapper">
               <div className="sidebar">
@@ -209,8 +209,7 @@ class EventsList extends React.Component {
                     <div className="event-pic">
                       <a href="#">
                         <img
-                          src="images/events-nearby/img-1.jpg"
-                          alt
+                          src="/static/events-nearby/img-1.jpg"
                           className="img img-responsive"
                         />
                       </a>
@@ -238,8 +237,7 @@ class EventsList extends React.Component {
                     <div className="event-pic">
                       <a href="#">
                         <img
-                          src="images/events-nearby/img-2.jpg"
-                          alt
+                          src="/static/events-nearby/img-2.jpg"
                           className="img img-responsive"
                         />
                       </a>
@@ -264,13 +262,13 @@ class EventsList extends React.Component {
                     </div>
                   </div>
                 </div>
-              </div>{" "}
+              </div>{' '}
               {}
-            </div>{" "}
+            </div>{' '}
             {}
-          </div>{" "}
+          </div>{' '}
           {}
-        </div>{" "}
+        </div>{' '}
         {}
       </section>
     );

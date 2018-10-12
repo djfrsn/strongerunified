@@ -554,7 +554,7 @@ a:focus {
 
 .form select {
   font-style: italic;
-  background: url(../images/select-icon.png) no-repeat right center;
+  background: url(..//static/select-icon.png) no-repeat right center;
   display: inline-block;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -661,7 +661,7 @@ a:focus {
 }
 
 .page-title {
-  background: url("../images/page-title/img-1.jpg") center center/cover no-repeat local;
+  background: url("..//static/page-title/img-1.jpg") center center/cover no-repeat local;
   width: 100%;
   height: 480px;
   text-align: center;
@@ -4810,11 +4810,11 @@ a:focus {
 }
 
 .fund-volunteers .container > .row > .col:first-child .box {
-  background: url("../images/volunteers-fund/img-1.jpg") center center/cover no-repeat local;
+  background: url("..//static/volunteers-fund/img-1.jpg") center center/cover no-repeat local;
 }
 
 .fund-volunteers .container > .row > .col:last-child .box {
-  background: url("../images/volunteers-fund/img-2.jpg") center center/cover no-repeat local;
+  background: url("..//static/volunteers-fund/img-2.jpg") center center/cover no-repeat local;
 }
 
 @media (max-width: 991px) {
@@ -6106,7 +6106,7 @@ a:focus {
   content: "";
   width: 18px;
   height: 14px;
-  background: url(../images/checkbox-check.png) -18px top no-repeat;
+  background: url(..//static/checkbox-check.png) -18px top no-repeat;
   cursor: pointer;
   position: absolute;
   left: -22px;
@@ -6115,7 +6115,7 @@ a:focus {
 
 .quick-donation-section input[type="radio"]:checked + label .check-icon:after {
   content: "";
-  background: url(../images/checkbox-check.png) left top no-repeat;
+  background: url(..//static/checkbox-check.png) left top no-repeat;
 }
 
 .quick-donation-section .donate-as-anonymous {
@@ -6414,7 +6414,7 @@ a:focus {
 
 .cta .notify-message label:after {
   content: "";
-  background: url("../images/notify-check.png") center center/100% no-repeat local;
+  background: url("..//static/notify-check.png") center center/100% no-repeat local;
   width: 18px;
   height: 14px;
   position: absolute;
@@ -7736,7 +7736,7 @@ a:focus {
 #7.0	recent-causes
 --------------------------------------------------------------*/
 .causes-list-page .page-title {
-  background: url("../images/page-title/img-2.jpg") center center/cover no-repeat local;
+  background: url("..//static/page-title/img-2.jpg") center center/cover no-repeat local;
 }
 
 .causes-list-page .causes-list-box-wrapper {
@@ -8002,7 +8002,7 @@ a:focus {
 }
 
 .urgent-donation .section-bg {
-  background: url("../images/urgent-donation-bg.jpg") center center/cover no-repeat local;
+  background: url("..//static/urgent-donation-bg.jpg") center center/cover no-repeat local;
   width: 100%;
   height: 50%;
   position: absolute;
@@ -8410,7 +8410,7 @@ a:focus {
 }
 
 .newsletter .children-holder {
-  background: url("../images/newsletter-children.jpg") center center/cover no-repeat local;
+  background: url("..//static/newsletter-children.jpg") center center/cover no-repeat local;
 }
 
 @media (max-width: 991px) {
@@ -8557,7 +8557,7 @@ a:focus {
 #8.0	causes-single-wrapper
 --------------------------------------------------------------*/
 .cause-single-page .page-title {
-  background: url("../images/page-title/img-2.jpg") center center/cover no-repeat local;
+  background: url("..//static/page-title/img-2.jpg") center center/cover no-repeat local;
 }
 
 .cause-single-page .causes-single-wrapper {
@@ -8887,7 +8887,7 @@ a:focus {
 #9.0	contact-section
 --------------------------------------------------------------*/
 .contact-page .page-title {
-  background: url("../images/page-title/img-3.jpg") center center/cover no-repeat local;
+  background: url("..//static/page-title/img-3.jpg") center center/cover no-repeat local;
 }
 
 .contact-page .contact-section-wrapper {
@@ -8905,7 +8905,7 @@ a:focus {
   content: "";
   width: 100%;
   height: 420px;
-  background: url("../images/map.jpg") center center/cover no-repeat local;
+  background: url("..//static/map.jpg") center center/cover no-repeat local;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -9136,7 +9136,7 @@ a:focus {
 #10.0	--------
 --------------------------------------------------------------*/
 .events-page .page-title {
-  background: url("../images/page-title/img-4.jpg") center center/cover no-repeat local;
+  background: url("..//static/page-title/img-4.jpg") center center/cover no-repeat local;
 }
 
 .events-page .event-row {
@@ -9345,7 +9345,7 @@ a:focus {
 #11.0	--------
 --------------------------------------------------------------*/
 .event-single-page .page-title {
-  background: url("../images/page-title/img-5.jpg") center center/cover no-repeat local;
+  background: url("..//static/page-title/img-5.jpg") center center/cover no-repeat local;
 }
 
 .event-single-page .event-single-wrapper .event-single-date-slider {
@@ -9630,7 +9630,7 @@ a:focus {
 #12.0	--------
 --------------------------------------------------------------*/
 .blog-page .page-title {
-  background: url("../images/page-title/img-3.jpg") center center/cover no-repeat local;
+  background: url("..//static/page-title/img-3.jpg") center center/cover no-repeat local;
 }
 
 .blog-page .blog-grids > .col {
@@ -9702,7 +9702,7 @@ a:focus {
 #13.0	--------
 --------------------------------------------------------------*/
 .blog-details-page .page-title {
-  background: url("../images/page-title/img-3.jpg") center center/cover no-repeat local;
+  background: url("..//static/page-title/img-3.jpg") center center/cover no-repeat local;
 }
 
 .blog-details-page {
@@ -10487,7 +10487,7 @@ a:focus {
 #14.0	products-section
 --------------------------------------------------------------*/
 .shop-page .page-title {
-  background: url("../images/page-title/img-5.jpg") center center/cover no-repeat local;
+  background: url("..//static/page-title/img-5.jpg") center center/cover no-repeat local;
 }
 
 .shop-page .products-section {
@@ -10521,7 +10521,7 @@ a:focus {
 #15.0	products-section
 --------------------------------------------------------------*/
 .shop-with-sidebar-page .page-title {
-  background: url("../images/page-title/img-5.jpg") center center/cover no-repeat local;
+  background: url("..//static/page-title/img-5.jpg") center center/cover no-repeat local;
 }
 
 .shop-with-sidebar-page .shop-main-content .products-grids {
@@ -10592,7 +10592,7 @@ a:focus {
 #16.0	products-section
 --------------------------------------------------------------*/
 .shop-details-page .page-title {
-  background: url("../images/page-title/img-5.jpg") center center/cover no-repeat local;
+  background: url("..//static/page-title/img-5.jpg") center center/cover no-repeat local;
 }
 
 .shop-details-page .shop-details-main-content {

@@ -15,13 +15,13 @@ class EventSingle extends React.Component {
                 </div>
                 <div className="event-single-slider">
                   <div>
-                    <img src="images/event-single/img-1.jpg" alt />
+                    <img src="/static/event-single/img-1.jpg" alt />
                   </div>
                   <div>
-                    <img src="images/event-single/img-1.jpg" alt />
+                    <img src="/static/event-single/img-1.jpg" alt />
                   </div>
                   <div>
-                    <img src="images/event-single/img-1.jpg" alt />
+                    <img src="/static/event-single/img-1.jpg" alt />
                   </div>
                 </div>
               </div>
@@ -160,7 +160,7 @@ class EventSingle extends React.Component {
                     <div className="event-pic">
                       <a href="#">
                         <img
-                          src="images/events-nearby/img-1.jpg"
+                          src="/static/events-nearby/img-1.jpg"
                           alt
                           className="img img-responsive"
                         />
@@ -189,7 +189,7 @@ class EventSingle extends React.Component {
                     <div className="event-pic">
                       <a href="#">
                         <img
-                          src="images/events-nearby/img-2.jpg"
+                          src="/static/events-nearby/img-2.jpg"
                           alt
                           className="img img-responsive"
                         />

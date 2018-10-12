@@ -10,7 +10,7 @@ class BlogSingle extends React.Component {
               <div className="post">
                 <div className="media">
                   <img
-                    src="images/blog-detail/img-1.jpg"
+                    src="/static/blog-detail/img-1.jpg"
                     alt
                     className="img img-responsive"
                   />
@@ -51,14 +51,14 @@ class BlogSingle extends React.Component {
                   <div className="gallery">
                     <div>
                       <img
-                        src="images/blog-detail/img-2.jpg"
+                        src="/static/blog-detail/img-2.jpg"
                         alt
                         className="img img-responsive"
                       />
                     </div>
                     <div>
                       <img
-                        src="images/blog-detail/img-3.jpg"
+                        src="/static/blog-detail/img-3.jpg"
                         alt
                         className="img img-responsive"
                       />
@@ -128,7 +128,7 @@ class BlogSingle extends React.Component {
                   <li>
                     <div className="article">
                       <div className="author-pic">
-                        <img src="images/blog-detail/comments/img-1.jpg" alt />
+                        <img src="/static/blog-detail/comments/img-1.jpg" alt />
                       </div>
                       <div className="details">
                         <div className="author-meta">
@@ -157,7 +157,7 @@ class BlogSingle extends React.Component {
                         <div className="article">
                           <div className="author-pic">
                             <img
-                              src="images/blog-detail/comments/img-2.jpg"
+                              src="/static/blog-detail/comments/img-2.jpg"
                               alt
                             />
                           </div>
@@ -189,7 +189,7 @@ class BlogSingle extends React.Component {
                         <div className="article">
                           <div className="author-pic">
                             <img
-                              src="images/blog-detail/comments/img-2.jpg"
+                              src="/static/blog-detail/comments/img-2.jpg"
                               alt
                             />
                           </div>
@@ -222,7 +222,7 @@ class BlogSingle extends React.Component {
                   <li>
                     <div className="article">
                       <div className="author-pic">
-                        <img src="images/blog-detail/comments/img-1.jpg" alt />
+                        <img src="/static/blog-detail/comments/img-1.jpg" alt />
                       </div>
                       <div className="details">
                         <div className="author-meta">
@@ -341,7 +341,7 @@ class BlogSingle extends React.Component {
                   <ul>
                     <li>
                       <div className="post-pic">
-                        <img src="images/blog-detail/thumb/img-1.jpg" alt />
+                        <img src="/static/blog-detail/thumb/img-1.jpg" alt />
                       </div>
                       <div className="details">
                         <h4>
@@ -352,7 +352,7 @@ class BlogSingle extends React.Component {
                     </li>
                     <li>
                       <div className="post-pic">
-                        <img src="images/blog-detail/thumb/img-2.jpg" alt />
+                        <img src="/static/blog-detail/thumb/img-2.jpg" alt />
                       </div>
                       <div className="details">
                         <h4>
@@ -363,7 +363,7 @@ class BlogSingle extends React.Component {
                     </li>
                     <li>
                       <div className="post-pic">
-                        <img src="images/blog-detail/thumb/img-3.jpg" alt />
+                        <img src="/static/blog-detail/thumb/img-3.jpg" alt />
                       </div>
                       <div className="details">
                         <h4>
@@ -458,47 +458,47 @@ class BlogSingle extends React.Component {
                   <ul>
                     <li>
                       <a href="#">
-                        <img src="images/instagram/img-1.jpg" alt />
+                        <img src="/static/instagram/img-1.jpg" alt />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <img src="images/instagram/img-2.jpg" alt />
+                        <img src="/static/instagram/img-2.jpg" alt />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <img src="images/instagram/img-3.jpg" alt />
+                        <img src="/static/instagram/img-3.jpg" alt />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <img src="images/instagram/img-4.jpg" alt />
+                        <img src="/static/instagram/img-4.jpg" alt />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <img src="images/instagram/img-5.jpg" alt />
+                        <img src="/static/instagram/img-5.jpg" alt />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <img src="images/instagram/img-6.jpg" alt />
+                        <img src="/static/instagram/img-6.jpg" alt />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <img src="images/instagram/img-7.jpg" alt />
+                        <img src="/static/instagram/img-7.jpg" alt />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <img src="images/instagram/img-8.jpg" alt />
+                        <img src="/static/instagram/img-8.jpg" alt />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <img src="images/instagram/img-9.jpg" alt />
+                        <img src="/static/instagram/img-9.jpg" alt />
                       </a>
                     </li>
                   </ul>

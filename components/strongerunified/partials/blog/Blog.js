@@ -11,7 +11,7 @@ class Blog extends React.Component {
                 <div className="entry-media">
                   <div className="img-holder">
                     <img
-                      src="images/blog/img-4.jpg"
+                      src="/static/blog/img-4.jpg"
                       alt
                       className="img img-responsive"
                     />
@@ -53,7 +53,7 @@ class Blog extends React.Component {
                 <div className="entry-media">
                   <div className="img-holder">
                     <img
-                      src="images/blog/img-5.jpg"
+                      src="/static/blog/img-5.jpg"
                       alt
                       className="img img-responsive"
                     />
@@ -95,7 +95,7 @@ class Blog extends React.Component {
                 <div className="entry-media">
                   <div className="img-holder">
                     <img
-                      src="images/blog/img-6.jpg"
+                      src="/static/blog/img-6.jpg"
                       alt
                       className="img img-responsive"
                     />
@@ -137,7 +137,7 @@ class Blog extends React.Component {
                 <div className="entry-media">
                   <div className="img-holder">
                     <img
-                      src="images/blog/img-7.jpg"
+                      src="/static/blog/img-7.jpg"
                       alt
                       className="img img-responsive"
                     />
@@ -179,7 +179,7 @@ class Blog extends React.Component {
                 <div className="entry-media">
                   <div className="img-holder">
                     <img
-                      src="images/blog/img-8.jpg"
+                      src="/static/blog/img-8.jpg"
                       alt
                       className="img img-responsive"
                     />
@@ -221,7 +221,7 @@ class Blog extends React.Component {
                 <div className="entry-media">
                   <div className="img-holder">
                     <img
-                      src="images/blog/img-1.jpg"
+                      src="/static/blog/img-1.jpg"
                       alt
                       className="img img-responsive"
                     />
