@@ -9,6 +9,7 @@ import PageTitleWrapper from './partials/about/PageTitleWrapper';
 import CausesList from './partials/causes/CausesList';
 import Newsletter from './partials/causes/Newsletter';
 import Footer from './partials/Footer';
+import UrgentDonation from './partials/causes/UrgentDonation';
 
 class About extends React.Component {
   render() {
@@ -31,6 +32,7 @@ class About extends React.Component {
                     </ol>
                   </PageTitleWrapper>
                   <CausesList />
+                  <UrgentDonation />
                   <Newsletter />
                   <Footer />
                 </React.Fragment>
