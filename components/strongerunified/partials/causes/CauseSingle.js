@@ -11,7 +11,6 @@ class CauseSingle extends React.Component {
                 <div className="img-holder">
                   <img
                     src="/static/cause-single/img-1.jpg"
-                    alt
                     className="img img-responsive"
                   />
                 </div>
@@ -40,7 +39,6 @@ class CauseSingle extends React.Component {
                       qui ratione voluptatem sequi nesciunt.
                     </p>
                     <p>
-                      {' '}
                       Neque porro quisquam est, qui dolorem ipsum quia dolor sit
                       amet, consectetur, adipisci velit, sed quia non numquam
                       eius modi tempora incidunt ut labore et dolore magnam
@@ -99,16 +97,11 @@ class CauseSingle extends React.Component {
                           </button>
                         </div>
                       </form>
-                    </div>{' '}
-                    {}
-                  </div>{' '}
-                  {}
-                </div>{' '}
-                {}
-              </div>{' '}
-              {}
-            </div>{' '}
-            {}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="col col-md-3 sidebar-wrapper">
               <div className="sidebar">
                 <div className="widget search-widget">
@@ -180,8 +173,7 @@ class CauseSingle extends React.Component {
                     <div className="event-pic">
                       <a href="#">
                         <img
-                          src="images/events-nearby/img-2.jpg"
-                          alt
+                          src="/static/events-nearby/img-2.jpg"
                           className="img img-responsive"
                         />
                       </a>
@@ -206,14 +198,10 @@ class CauseSingle extends React.Component {
                     </div>
                   </div>
                 </div>
-              </div>{' '}
-              {}
-            </div>{' '}
-            {}
-          </div>{' '}
-          {}
-        </div>{' '}
-        {}
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     );
   }

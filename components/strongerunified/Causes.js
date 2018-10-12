@@ -7,6 +7,7 @@ import vendorScripts from '../../pages/_vendorScripts';
 import Header from './partials/Header';
 import PageTitleWrapper from './partials/about/PageTitleWrapper';
 import CausesList from './partials/causes/CausesList';
+import Newsletter from './partials/causes/Newsletter';
 import Footer from './partials/Footer';
 
 class About extends React.Component {
@@ -30,6 +31,7 @@ class About extends React.Component {
                     </ol>
                   </PageTitleWrapper>
                   <CausesList />
+                  <Newsletter />
                   <Footer />
                 </React.Fragment>
               )}
