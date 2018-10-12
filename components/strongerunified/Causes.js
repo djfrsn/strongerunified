@@ -5,7 +5,7 @@ import { Preloader } from './Home';
 
 import vendorScripts from '../../pages/_vendorScripts';
 import Header from './partials/Header';
-import PageTitleWrapper from './partials/about/PageTitleWrapper';
+import PageTitleWrapper from './partials/PageTitleWrapper';
 import CausesList from './partials/causes/CausesList';
 import Newsletter from './partials/causes/Newsletter';
 import Footer from './partials/Footer';

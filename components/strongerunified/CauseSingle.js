@@ -5,7 +5,7 @@ import { Preloader } from './Home';
 
 import vendorScripts from '../../pages/_vendorScripts';
 import Header from './partials/Header';
-import PageTitleWrapper from './partials/about/PageTitleWrapper';
+import PageTitleWrapper from './partials/PageTitleWrapper';
 import CauseSingle from './partials/causes/CauseSingle';
 import CausesRelated from './partials/causes/CausesRelated';
 import Partners from './partials/about/Partners';
@@ -23,7 +23,7 @@ class About extends React.Component {
               {content.content_ready && (
                 <React.Fragment>
                   <Header content={header.data} />
-                  <PageTitleWrapper>
+                  <PageTitleWrapper title="Cause 1">
                     <ol className="breadcrumb">
                       <li>
                         <a href="/">Home</a>

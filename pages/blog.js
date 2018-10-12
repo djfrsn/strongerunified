@@ -3,11 +3,11 @@ import { getContentTypeAPI } from '../api/prismic';
 import { ContentProvider } from '../helpers/ContentContext';
 import { getContentType } from '../helpers/prismic';
 
-import PageWrapper from '../components/strongerunified/CauseSingle';
+import PageWrapper from '../components/strongerunified/Blog';
 import '../components/index.scss';
 
-const Causes = props => (
-  <App title="Stronger Unified - Causes 1">
+const Blog = props => (
+  <App title="Stronger Unified - Our Blog">
     <ContentProvider
       content={props.content}
       content_ready={props.content_ready}
@@ -17,7 +17,7 @@ const Causes = props => (
   </App>
 );
 
-Causes.getInitialProps = async () => {
+Blog.getInitialProps = async () => {
   const response = await getContentTypeAPI({
     content_type: ['header', 'footer']
   });
@@ -25,4 +25,4 @@ Causes.getInitialProps = async () => {
   return getContentType(response);
 };
 
-export default Causes;
+export default Blog;

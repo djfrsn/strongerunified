@@ -6,34 +6,30 @@ import { Preloader } from './Home';
 import vendorScripts from '../../pages/_vendorScripts';
 import Header from './partials/Header';
 import PageTitleWrapper from './partials/PageTitleWrapper';
-import CauseSingle from './partials/causes/CauseSingle';
-import CausesRelated from './partials/causes/CausesRelated';
-import Partners from './partials/about/Partners';
+import Contact from './partials/Contact';
 import Footer from './partials/Footer';
 
-class EventSingle extends React.Component {
+class Blog extends React.Component {
   render() {
     return (
       <ContentConsumer>
         {content => {
           const { header } = keyContent(content.content);
           return (
-            <div className="cause-single-page page-wrapper">
+            <div className="contact-page page-wrapper">
               <Preloader content={content} />
               {content.content_ready && (
                 <React.Fragment>
                   <Header content={header.data} />
-                  <PageTitleWrapper title="Event 1">
+                  <PageTitleWrapper title="Contact Us">
                     <ol className="breadcrumb">
                       <li>
                         <a href="index.html">Home</a>
                       </li>
-                      <li>Event details</li>
+                      <li>Contact</li>
                     </ol>
                   </PageTitleWrapper>
-                  <CauseSingle />
-                  <CausesRelated />
-                  <Partners title="Sponsored By" />
+                  <Contact />
                   <Footer />
                 </React.Fragment>
               )}
@@ -45,4 +41,4 @@ class EventSingle extends React.Component {
   }
 }
 
-export default vendorScripts(EventSingle);
+export default vendorScripts(Blog);
