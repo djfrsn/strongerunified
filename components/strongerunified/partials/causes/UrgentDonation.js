@@ -13,7 +13,6 @@ class UrgentDonation extends React.Component {
                   <div className="img-holder">
                     <img
                       src="/static/urgent-slider/img-2.jpg"
-                      alt
                       className="img img-responsive"
                     />
                   </div>
@@ -57,7 +56,6 @@ class UrgentDonation extends React.Component {
                   <div className="img-holder">
                     <img
                       src="/static/urgent-slider/img-2.jpg"
-                      alt
                       className="img img-responsive"
                     />
                   </div>
@@ -101,7 +99,6 @@ class UrgentDonation extends React.Component {
                   <div className="img-holder">
                     <img
                       src="/static/urgent-slider/img-2.jpg"
-                      alt
                       className="img img-responsive"
                     />
                   </div>

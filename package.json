@@ -6,7 +6,7 @@
     "start": "NODE_ENV=production node server.js",
     "build": "rm -rf .next/ & rm -rf node_modules/.cache & rm -rf out/ && next build",
     "export": "next export",
-    "deploy": "yarn build && now --public"
+    "deploy": "yarn build && now --public && now alias"
   },
   "dependencies": {
     "@svgr/cli": "^2.3.0",

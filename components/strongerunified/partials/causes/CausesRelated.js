@@ -18,7 +18,6 @@ class CausesRelated extends React.Component {
                   <div className="img-holder">
                     <img
                       src="/static/causes-s2/img-4.jpg"
-                      alt
                       className="img img-responsive"
                     />
                   </div>
@@ -57,7 +56,6 @@ class CausesRelated extends React.Component {
                   <div className="img-holder">
                     <img
                       src="/static/causes-s2/img-2.jpg"
-                      alt
                       className="img img-responsive"
                     />
                   </div>
@@ -96,7 +94,6 @@ class CausesRelated extends React.Component {
                   <div className="img-holder">
                     <img
                       src="/static/causes-s2/img-5.jpg"
-                      alt
                       className="img img-responsive"
                     />
                   </div>
